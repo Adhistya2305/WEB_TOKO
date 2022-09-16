@@ -19,9 +19,7 @@ Website sistem informasi pengelolaan produk Fashion, aplikasi ini dibuat untuk l
 - Lihat perubahan [lebih lanjut.](../main/changelogs.md)
 
 ### 📸 Preview  
-
-|     |     |     |
-|-----|-----|-----|  
+![image](https://user-images.githubusercontent.com/62005221/190658084-23e7e10e-1579-41de-b444-dd4422888c2d.png)
 
 ### 📝 Persyaratan Penggunaan
 - Javascript ES6 Supported
