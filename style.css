@@ -1,9 +1,14 @@
+/* Google Fonts Installer */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/* General CSS */
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'spartan', sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
 h1{
     font-size: 50px;
@@ -12,8 +17,6 @@ h1{
 }
 .star i{
     color: #c0e12f;
-    
-    
     
 }
 h2{
@@ -70,24 +73,43 @@ button.white{
 body{
     width: 100%;
 }
-/*header*/
+.hover {
+  color: #0000;
+  background: 
+    linear-gradient(90deg,#ED90A3 50%,#000 0) 
+    var(--_p,100%)/200% no-repeat;
+  -webkit-background-clip: text;
+          background-clip: text;
+  transition: 1.5s;
+}
+.hover:hover {
+  --_p: 0%;
+}
+
+/* Header Section  */
 #header{
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 20px 80px;
-    background: #deede6;
+    background: white;
     box-shadow: 0 5px 15px rgba(0 ,0,0, 0.06);
     z-index: 999;
     position: sticky;
     top: 0;
-    left: 0;
 }
 #navbar{
     display: flex;
     align-items: center;
     justify-content: center;
 
+}
+.logo {
+    font-size: 32px;
+    font-family: 'Courgette';
+    color: #ED90A3;
+    text-decoration: none;
+    font-weight: bold;
 }
 #navbar li{
     list-style: none;
@@ -125,92 +147,89 @@ body{
 #close{
     display: none;
 }
-/*home page*/
+
+/* Hero Section */
 #hero{
-    background-image: url("img/hero4.png");
-    height: 90vh;
+    background-image: url("https://img.freepik.com/free-photo/slender-girl-great-mood-is-having-fun-dancing-with-bag-her-hands-shot-italian-model-wrap-dress_197531-9980.jpg?w=740&t=st=1663330684~exp=1663331284~hmac=af23a8462f22f81f9fdcaecdd8e100286d67eacd983cfaa31bb4499a4bc9ee78");
+    height: 75vh;
+    border-radius: 0px 0px 150px 0px !important;
     width: 100%;
     background-position: top 25% right 0 ;
-    padding: 0 80px ;
+    padding: 80px !important;
     display: flex;
     align-items: flex-start;
     justify-content: center;
     flex-direction: column;
-
+    background-repeat: no-repeat;
 }
 #hero h4{
     padding-bottom: 15px;
 }
 #hero h1{
-    color: rgb(21, 98, 98);
-
+    color: #D8667D;
 }
 #hero button{
     background-image: url("img/button.png");
     background-color: transparent;
     color: rgb(76, 141, 141);
     border: 0;
-    padding: 14px 80px 14px 65px;
+    padding: 12px 80px 14px 65px;
     background-repeat: no-repeat;
     cursor: pointer;
-    font-weight: 700;
-    font-size: 15px;
-
+    font-weight: 800;
+    font-size: 18px;
 }
+#hero button:hover{
+    opacity: 0.8;
+}
+
+/* Feature Landing Section */
 #feature{
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
+    margin-top: 30px;
 }
 #feature .fe-box{
     width: 180px;
     text-align: center;
     padding: 25px 15px;
-    box-shadow: 20px 20px 34px rgb(17, 17, 17);
-    border: 1px solid #deede6;
-    border-radius: 4px;
+    box-shadow:0 .5rem 1rem rgba(0,0,0,.15) !important;
+    border-radius: 10px;
     margin: 15px 0;
-}
-#feature .fe-box:hover{
-    box-shadow: 10px 10px 54px rgb(17, 17, 17);
-
-
 }
 #feature .fe-box img{
     width: 100%;
     margin-bottom: 10px;
-
-
 }
 #feature .fe-box h6{
     padding: 9px 8px 6px 8px;
     line-height: 1;
     border-radius: 4px;
     color: rgb(15, 57, 57);
-    background-color: rgb(249, 215, 206);
+    background-color: #89D9E2;
     display: inline-block;
-
-
 }
 #feature .fe-box:nth-child(2) h6{
-    background-color: #99dfc1;
+    background-color: #EC8AC4;
 }
 #feature .fe-box:nth-child(3) h6{
-    background-color: #bbf4c0;
+    background-color: #B8DD7F;
 }
 #feature .fe-box:nth-child(4) h6{
-    background-color: #7db0c6;
+    background-color: #A3C6DE;
 }
 #feature .fe-box:nth-child(5) h6{
-    background-color: #9f7396;
+    background-color: #C8C8C8;
 }
 #feature .fe-box:nth-child(6) h6{
-    background-color: #c7aa7d;
+    background-color: #E7AC8C;
 }
+
+/* Items Product */
 #product1{
     text-align: center;
-
 }
 #product1 .pro-container{
     display: flex;
@@ -223,21 +242,21 @@ body{
     min-width: 230px;
     padding: 10px 12px;
     border: 1px solid #fff;
-    border-radius: 25px;
+    border-radius: 10px;
     cursor: pointer;
-    box-shadow: 20px 20px 30px rgb(143, 135, 135);
+    box-shadow:0 .5rem 1rem rgba(0,0,0,.15) !important;
     margin: 15px 0;
     transition: 0.2s ease;
     position: relative;
-
 }
-#product1 .pro:hover{
-    box-shadow: 20px 20px 30px rgb(143, 135, 135);
-}
-
 #product1 .pro img{
     width: 100%;
     border-radius: 20px;
+    transition: 1s;
+}
+#product1 .pro img:hover{
+    animation: cubic-bezier(0.0, 0.0, 1.0, 1.0);
+    transform: scale(1.1);
 }
 #product1 .pro .des{
     text-align: start;
@@ -256,8 +275,6 @@ body{
     font-size: 15px;
     color: #e6fe09;
     right: 100px; 
-    
-    
 }
 #product1 .pro .des h4{
     padding-top: 7px;
@@ -278,6 +295,8 @@ body{
     bottom: 20px;
     right: 10px;
 }
+
+/* CTA Banner */
 #banner{
     display: flex;
     flex-direction: column;
@@ -286,12 +305,11 @@ body{
     text-align: center;
     background-image: url("img/banner/b2.jpg");
     width: 100%;
-    height: 40vh;
+    height: 50vh;
     background-size: cover;
     background-position: center;
-
-
 }
+
 #banner h4{
     color: #fff;
     font-size: 16px;
@@ -303,12 +321,14 @@ body{
 }
 #banner h2 span{
     color: rgb(232, 28, 28);
-    
+}
+#banner button{
+    background-color: #788A8A;
+    color: #fff;
 }
 #banner button:hover{
-    background-color: #299dcf;
+    background-color: #96493A;
     color: #fff;
-
 }
 #sm-banner{
     display: flex;
